@@ -8,10 +8,16 @@ public class GameContext : DbContext
     {}
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Category>()
-            .HasMany(c => c.Games)
-            .WithOne(g => g.Category)
+        //modelBuilder.Entity<Category>()
+        //    .HasMany(c => c.Games)
+        //    .WithOne(g => g.Category)
+        //    .HasForeignKey(g => g.CategoryId);
+
+        modelBuilder.Entity<Game>()
+            .HasOne(g => g.Category)
+            .WithMany(c => c.Games)
             .HasForeignKey(g => g.CategoryId);
+           
 
         modelBuilder.Seed();
     }

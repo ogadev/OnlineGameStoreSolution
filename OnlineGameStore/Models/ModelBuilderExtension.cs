@@ -26,12 +26,12 @@ public static class ModelBuilderExtension
                 Title = "Modern Warfare II",
                 CategoryId = 1,
                 Description = "Pretty much world war 3",
-                ESRB = { Description = "Mature", Letter = 'M' },
+                RatingDescription = "Mature", RatingLetter = 'M',
                 ReleaseDate = new DateTime(2022, 10, 28),
                 Price = 69.99M,
                 Publisher = "Activision",
-                Minimum = { Graphics = "RTX 3090", Memory = "16GB", OS = "Windows", Processor = "i9", Storage = "60GB" },
-                Recommended = { Graphics = "RTX 3090", Memory = "16GB", OS = "Windows", Processor = "i9", Storage = "60GB" }
+                MinGraphics = "RTX 3090", MinMemory = "16GB", MinOs = "Windows", MinProcessor = "i9", MinStorage = "60GB",
+                RecGraphics = "RTX 3090", RecMemory = "16GB", RecOs = "Windows", RecProcessor = "i9", RecStorage = "60GB" 
             },
              new Game
              {
@@ -39,12 +39,12 @@ public static class ModelBuilderExtension
                  Title = "Spiderman",
                  CategoryId = 2,
                  Description = "Swing around New York City as Spiderman",
-                 ESRB = { Description = "Teen", Letter = 'T' },
+                 RatingDescription = "Teen", RatingLetter = 'T',
                  ReleaseDate = new DateTime(2022, 7, 22),
                  Price = 69.99M,
                  Publisher = "Insomniac Games",
-                 Minimum = { Graphics = "RTX 3060", Memory = "16GB", OS = "Windows", Processor = "i5", Storage = "55GB" },
-                 Recommended = { Graphics = "RTX 3080", Memory = "16GB", OS = "Windows", Processor = "I9", Storage = "55GB" }
+                 MinGraphics = "RTX 3060", MinMemory = "16GB", MinOs = "Windows", MinProcessor = "i5", MinStorage = "55GB" ,
+                 RecGraphics = "RTX 3080", RecMemory = "16GB", RecOs = "Windows", RecProcessor = "I9", RecStorage = "55GB" 
              },
               new Game
               {
@@ -52,12 +52,12 @@ public static class ModelBuilderExtension
                   Title = "FIFA 23",
                   CategoryId = 6,
                   Description = "Play like Messi!",
-                  ESRB = { Description = "Everyone", Letter = 'E' },
+                  RatingDescription = "Everyone", RatingLetter = 'E',
                   ReleaseDate = new DateTime(2022, 10, 1),
                   Price = 59.99M,
                   Publisher = "Elecrtronic Arts",
-                  Minimum = { Graphics = "RX 5600 XT", Memory = "8GB", OS = "Windows", Processor = "i5", Storage = "100GB" },
-                  Recommended = { Graphics = "RX 5600 XT", Memory = "12GB", OS = "Windows", Processor = "I9", Storage = "100GB" }
+                  MinGraphics = "RX 5600 XT", MinMemory = "8GB", MinOs = "Windows", MinProcessor = "i5", MinStorage = "100GB",
+                  RecGraphics = "RX 5600 XT", RecMemory = "12GB", RecOs = "Windows", RecProcessor = "I9", RecStorage = "100GB" 
               },
                new Game
                {
@@ -65,12 +65,12 @@ public static class ModelBuilderExtension
                    Title = "NBA 2K23",
                    CategoryId = 6,
                    Description = "Take on NBA or WNBA teams in PLAY NOW and feel true-to-life gameplay.",
-                   ESRB = { Description = "Everyone", Letter = 'E' },
+                   RatingDescription = "Everyone", RatingLetter = 'E',
                    ReleaseDate = new DateTime(2022, 9, 8),
                    Price = 59.99M,
                    Publisher = "2K",
-                   Minimum = { Graphics = "RX 5600 XT", Memory = "8GB", OS = "Windows", Processor = "i3", Storage = "110GB" },
-                   Recommended = { Graphics = "RX 5600 XT", Memory = "12GB", OS = "Windows", Processor = "i5", Storage = "110GB" }
+                   MinGraphics = "RX 5600 XT", MinMemory = "8GB", MinOs = "Windows", MinProcessor = "i3", MinStorage = "110GB",
+                   RecGraphics = "RX 5600 XT", RecMemory = "12GB", RecOs = "Windows", RecProcessor = "i5", RecStorage = "110GB" 
                },
                new Game
                {
@@ -78,12 +78,12 @@ public static class ModelBuilderExtension
                    Title = "Halo Infinite",
                    CategoryId = 1,
                    Description = "The legendary Halo series returns with the most expansive Master Chief campaig",
-                   ESRB = { Description = "Teen", Letter = 'T' },
+                   RatingDescription = "Teen", RatingLetter = 'T',
                    ReleaseDate = new DateTime(2021, 11, 9),
                    Price = 49.99M,
                    Publisher = "Xbox Game Studios",
-                   Minimum = { Graphics = "RX 570", Memory = "8GB", OS = "Windows", Processor = "Ryzen 5 1600", Storage = "50GB" },
-                   Recommended = { Graphics = "RX 5600 XT", Memory = "16GB", OS = "Windows", Processor = "Ryzen 7 3700X", Storage = "50GB" }
+                   MinGraphics = "RX 570", MinMemory = "8GB", MinOs = "Windows", MinProcessor = "Ryzen 5 1600", MinStorage = "50GB",
+                   RecGraphics = "RX 5600 XT", RecMemory = "16GB", RecOs = "Windows", RecProcessor = "Ryzen 7 3700X", RecStorage = "50GB"
                });
     }
    
