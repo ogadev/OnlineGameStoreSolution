@@ -9,7 +9,7 @@ class WriteAllLines
     {
         string[] lines =
         {
-            "Bailey", "Kailtyn", "Oscar"
+            "test1", "test2", "test3", "test4"
         };
 
         await File.WriteAllLinesAsync("ournames.txt", lines);
